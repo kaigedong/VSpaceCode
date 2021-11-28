@@ -95,7 +95,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Change `g i` to go to implementations from go to symbol which exists in `<spc> j i`
   - Change `g I` to find all implementations from show all symbols which exists in `<spc> j I`
   - Remove `g m` as the command is not valid
-  - Move `t t` toggle test  to `t T`
+  - Move `t t` toggle test to `t T`
   - Move `t f` test function at cursor to `t t`
   - Move `t F` test file to `t f`
 
@@ -491,6 +491,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ⚙️ Add `vim.useSystemClipboard` to the setting configuration command
 - ⌨️ Add `<spc>` to trigger which-key menu when the active editor group is empty
 - ⌨️ Add `ctrl+j/k` as a shortcut to traverse items in:
+
   - Quick open menu/QuickPick
   - Suggestion overlay/intellisense
   - Parameter hint (i.e. the overlay when there's multiple overloads)
@@ -507,7 +508,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add menu for magit ref `y` in normal mode
 
-    This requires configuration of your `keybindings.json`, checkout the installation section of [README](./README.md) for more information
+  This requires configuration of your `keybindings.json`, checkout the installation section of [README](./README.md) for more information
 
 - Add configuration commands for setting up both `settings.json` and `keybindings.json`
 - Add `<spc> b H/J/K/L` for directional editor moving
@@ -673,7 +674,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> s` for search/symbol menu
 - Add `<spc> p` for project menu
 - Implement `args` key in the bindings to executes command(s) with args
-For example, the follow the binding will map `y` in the menu to `y y` in vim to yank a line by passing a `args` for that command.
+  For example, the follow the binding will map `y` in the menu to `y y` in vim to yank a line by passing a `args` for that command.
 
 ```jsonc
 {
@@ -747,6 +748,7 @@ In this example: Only the second command has args. When `args` is used with `com
   - Add `T` to show active file in explore
   - Add `y` to copy the path of the active file
 - Change the window bindings to be more aligned with spacemacs
+
   - Use `/` instead of `\` for splitting editor editor right
   - Use `d` instead of `x` for closing editors in group
   - Change `h` to focus on the left pane

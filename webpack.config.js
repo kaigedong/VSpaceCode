@@ -25,7 +25,7 @@ const webConfig = /** @type WebpackConfig */ {
       // see https://webpack.js.org/configuration/resolve/#resolvefallback
       // for the list of Node.js core module polyfills.
       assert: require.resolve("assert"),
-      path: require.resolve("path-browserify")
+      path: require.resolve("path-browserify"),
     },
   },
   module: {
@@ -35,7 +35,7 @@ const webConfig = /** @type WebpackConfig */ {
         exclude: /node_modules/,
         use: [
           {
-            loader: path.resolve('./loaders/jsonc-loader.js'),
+            loader: path.resolve("./loaders/jsonc-loader.js"),
           },
         ],
       },
@@ -90,7 +90,7 @@ const nodeConfig = /** @type WebpackConfig */ {
         exclude: /node_modules/,
         use: [
           {
-            loader: path.resolve('./loaders/jsonc-loader.js'),
+            loader: path.resolve("./loaders/jsonc-loader.js"),
           },
         ],
       },
@@ -108,9 +108,9 @@ const nodeConfig = /** @type WebpackConfig */ {
   externals: {
     vscode: "commonjs vscode", // ignored because it doesn't exist
     mocha: "commonjs mocha", // don't bundle
-    '@vscode/test-electron': "commonjs @vscode/test-electron", // don't bundle
-    '@vscode/test-web': "commonjs @vscode/test-web", // don't bundle
-    'adm-zip': "commonjs adm-zip", // don't bundle
+    "@vscode/test-electron": "commonjs @vscode/test-electron", // don't bundle
+    "@vscode/test-web": "commonjs @vscode/test-web", // don't bundle
+    "adm-zip": "commonjs adm-zip", // don't bundle
   },
   performance: {
     hints: false,

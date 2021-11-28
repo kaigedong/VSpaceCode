@@ -9,22 +9,22 @@ This extension aims to provide the best out-of-the-box experience like spacemacs
 ## First Time Setup
 
 1. Install prerequisites:
-    - [Visual Studio Code](https://code.visualstudio.com/)
-    - [Node.js](https://nodejs.org/)
+   - [Visual Studio Code](https://code.visualstudio.com/)
+   - [Node.js](https://nodejs.org/)
 2. Fork the repository
 3. In a terminal
 
-    ```sh
-    # fork and clone the repository
-    git clone git@github.com:<YOUR-FORK>/VSpaceCode.git
-    cd VSpaceCode
+   ```sh
+   # fork and clone the repository
+   git clone git@github.com:<YOUR-FORK>/VSpaceCode.git
+   cd VSpaceCode
 
-    # Install the dependencies
-    npm install
+   # Install the dependencies
+   npm install
 
-    # Open in VSCode
-    code .
-    ```
+   # Open in VSCode
+   code .
+   ```
 
 4. Install [TypeScript + Webpack Problem Matchers for VS Code](https://marketplace.visualstudio.com/items?itemName=eamodio.tsl-problem-matcher)
 5. Go to debug tab select `Run Extension`
